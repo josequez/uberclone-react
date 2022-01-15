@@ -33,7 +33,9 @@ const NavigateCard = (props: any) => {
                             location: details?.geometry.location,
                             description: data.description
                         })
+                        
                         );
+                        console.log('Destino:',data.description);
                         //En lugar de navigation.navigate, uso props.navigation.navigate...
                         //Pequeno hack para typeScript me deje tranquilo...
                         props.navigation.navigate('RideOptionCard')
